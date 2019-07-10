@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Klavica';
+  src: url(KlavikaRegular.otf);
+}
+
+body{
+	margin-top:90px;
+}
+
+.navbar{
+	background-color:#4267b2;
+	color:white;
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	font-family: 'Klavica';
+	padding-left: 15px;
+}
+
+.logo{
+	font-size: 30px;
+}
