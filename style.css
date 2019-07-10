@@ -1,7 +1,12 @@
 @font-face {
-  font-family: 'Klavica';
-  src: url(KlavikaRegular.otf);
+  font-family: 'Klavica-Bold';
+  src: url('KlavikaBold.otf');
 }
+
+/* @font-face {
+  font-family: 'Klavica';
+  src: url('KlavikaRegular.otf');
+} */
 
 body{
 	margin-top:90px;
@@ -14,7 +19,8 @@ body{
 	left:0px;
 	top:0px;
 	width: 100%;
-	font-family: 'Klavica';
+	font-family: 'Klavica-Bold';
+	/* font-weight: 700; */
 	padding-left: 15px;
 }
 
