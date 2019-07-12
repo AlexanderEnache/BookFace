@@ -33,7 +33,7 @@
 
 	<head>
 		<title>AssFace</title>
-		<link rel="stylesheet" type="text/css" href="../style/style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
 	<body>
