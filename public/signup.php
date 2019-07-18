@@ -1,4 +1,4 @@
-<?php include 'connection.php'?>
+<?php include 'connect.php'?>
 
 <?php 
 
@@ -15,12 +15,16 @@
 		while($current = mysqli_fetch_assoc($result)){
 			if($current['username'] == $_POST['username']){
 				echo 'That username exists already';
-				isset($_POST['submit']);
+				unset($_POST['submit']);
 				exit();
 			}
 		}
 		
 		$result = mysqli_query($connection, "insert into userlog (name, username, password, crt_at) values ('" . $_POST['name'] . "'," . " '" . $_POST['username'] . "', " . "'". $_POST['password'] . "', " . (string)time() . "); ");
+		
+		$result = mysqli_query($connection, "create table ".$_POST['username']." (post varchar(5000), crt_at bigint );");
+		
+		//$result = mysqli_query($connection, "insert into ".$_POST['username']." (username) values ('".$_POST['name']."'); ");
 		
 		session_start();
 		$_SESSION['username'] = $_POST['username'];
