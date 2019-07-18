@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 
-<?php include 'connect.php' ?>
+<?php include 'connection.php' ?>
 
 <?php
 
