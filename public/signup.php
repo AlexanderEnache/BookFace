@@ -1,5 +1,9 @@
 <?php include 'connection.php'?>
 
+<style>
+<?php include 'style.css'?>
+</style>
+
 <?php 
 
 	if(isset($_POST['submit'])){
@@ -22,13 +26,16 @@
 		
 		$result = mysqli_query($connection, "insert into userlog (name, username, password, crt_at) values ('" . $_POST['name'] . "'," . " '" . $_POST['username'] . "', " . "'". $_POST['password'] . "', " . (string)time() . "); ");
 		
-		$result = mysqli_query($connection, "create table ".$_POST['username']." (post varchar(5000), crt_at bigint );");
+		$result = mysqli_query($connection, 'select id from userlog where username = "'.$_POST['username'].'";');
 		
-		//$result = mysqli_query($connection, "insert into ".$_POST['username']." (username) values ('".$_POST['name']."'); ");
+		while($cur = mysqli_fetch_assoc($result)){
+			$id = $cur['id'];
+		}
 		
 		session_start();
 		$_SESSION['username'] = $_POST['username'];
 		$_SESSION['name'] = $_POST['name'];
+		$_SESSION['id'] = $id;
 		
 		unset($_POST);
 		

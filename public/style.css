@@ -37,7 +37,6 @@ li{
 }
 
 a{
-	color: white;
 	text-decoration: none;
 }
 
@@ -50,10 +49,18 @@ a{
 	text-align: center;
 }
 
+.navlink{
+	color: white;
+}
 
+.post{
+	border: 2px solid #3b5998;
+}
 
-
-
+.postimg{
+	/* length:60px; */
+	width:60px;
+}
 
 
 
@@ -73,6 +80,7 @@ a{
 /* 
 
 create table userlog(id serial, name varchar(20), username varchar(20), password varchar(20), crt_at bigint);
+create table postlog(id serial, userid int, text varchar(5000), crt_at bigint);
 
 insert into userlog (name, username, password) values ('me', 'root', 'password'); 
 

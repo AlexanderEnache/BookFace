@@ -1,56 +1,49 @@
 <?php session_start(); ?>
 
 <?php include 'connection.php'?>
+<?php include 'postObj.php'?>
+
+<style>
+<?php include 'style.css'?>
+</style>
 
 <html>
 
 	<head>
 		<title>AssFace</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	<body>
 	<?php include 'navbar.php';?>
 		<h1>Home</h1>
 		<?php
-		
-		if(isset($_SESSION['username'])){
-		$result = mysqli_query($connection, "select * from ".$_SESSION['username'].";");
-		$numOfPosts = 0;
-			while($current = mysqli_fetch_assoc($result)){
-				$numOfPosts++;
-				echo "<p>".$current['post']."</p>";
-				echo '<p>'.DateDiff($current['crt_at']).'</p>';
+			if(isset($_SESSION['username'])){
+				$result = mysqli_query($connection, "select * from postlog where userid = ".$_SESSION['id'].";");
+				if(mysqli_num_rows($result)){
+					while($current = mysqli_fetch_assoc($result)){
+						(new post($current['text'], $current['crt_at'], $current['id'], $current['imgid']))->listItem();
+					}
+				}else{
+					echo "<p>You have no posts yet</p>";
+				}
+			}else{
+				echo "<p>You not logged in</p>";
 			}
-			if(!$numOfPosts){
-				echo "<p>You Have no posts yet</p>";
-			}
-		}else{
-			echo "<p>You not logged in</p>";
-		}
 		?>
 	</body>
 
 </html>
 
 
-<?php
 
-	function DateDiff($epoch){//86400
-		$diff = time() - $epoch;
-		if($diff > 86400){
-			return (new DateTime("@$diff"))->format('Y-m-d');
-		}else{
-			if($diff > 3600){
-				return (new DateTime("@$diff"))->format('g')." hours ago";
-			}else{
-				return (new DateTime("@$diff"))->format('i')." minutes ago";
-			}
-		}
-		//return time();
-	}
 
-?>
+
+
+
+
+
 
 
 
