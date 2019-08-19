@@ -1,1 +1,3 @@
 cap post size
+
+get last genereated ID with $id = $conn->insert_id; in post.php
