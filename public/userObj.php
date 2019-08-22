@@ -23,7 +23,7 @@
 		}
 	
 		public function open(){
-			header('Location: home.php');
+			header('Location: index.php');
 		}
 	
 	}

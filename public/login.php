@@ -29,7 +29,7 @@
 			echo '<h3>Wrong username</h3>';
 		}
 		unset($_POST);
-		header("Location: home.php");
+		header("Location: index.php");
 	}
 
 ?>
@@ -43,12 +43,16 @@
 	
 	<body>
 	<?php include 'navbar.php'; ?>
-		<h1>Log in</h1>
-		<form action="login.php" method="post">
-			<input type='text' placeholder='Username' name='username'/>
-			<input type='password' placeholder='Password' name='password'/>
-			<input class='button' type="submit" name="submit" value="Send">
-		</form>
+	
+		<div class='blue-box'>
+			<form class='form' action="login.php" method="post">
+				<h1>Log in</h1>
+				<input class='form-input' type='text' placeholder='Username' name='username'/> <br><br>
+				<input class='form-input' type='password' placeholder='Password' name='password'/> <br><br>
+				<input class='form-button' type="submit" name="submit" value="Send"> <br><br>
+				<a class='form-link' href='signup.php'>Create account</a>
+			</form>
+		</div>
 	</body>
 </html>
 

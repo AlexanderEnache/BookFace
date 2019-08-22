@@ -7,6 +7,12 @@
 <?php include 'style.css'?>
 </style>
 
+<?php
+	if(!isset($_SESSION['username'])){
+		header("Location: login.php");
+	}
+?>
+
 <html>
 
 	<head>
@@ -32,6 +38,9 @@
 				echo "<p>You not logged in</p>";
 			}
 		?>
+		
+		<?php include 'chatbar.php';?>
+		
 	</body>
 
 </html>

@@ -39,7 +39,7 @@
 		
 		unset($_POST);
 		
-		header("Location: home.php");
+		header("Location: index.php");
 		
 	}
 
@@ -54,14 +54,16 @@
 	
 	<body>
 	<?php include 'navbar.php'; ?>
-		<h1>Sign Up</h1>
-		<form action="signup.php" method="post">
-			<input type='text' placeholder='Full Name' name='name'/>
-			<input type='text' placeholder='Username' name='username'/>
-			<input type='password' placeholder='Password' name='password'/>
-			<input type='password' placeholder='Retype Password' name='repassword'/>
-			<input class='button' type="submit" name="submit" value="Send">
-		</form>
+		<div class='blue-box'>
+			<form class='form' action="signup.php" method="post">
+				<h1>Sign Up</h1>
+				<input class='form-input' type='text' placeholder='Full Name' name='name'/> <br><br>
+				<input class='form-input' type='text' placeholder='Username' name='username'/> <br><br>
+				<input class='form-input' type='password' placeholder='Password' name='password'/> <br><br>
+				<input class='form-input' type='password' placeholder='Retype Password' name='repassword'/> <br><br>
+				<input class='form-button' type="submit" name="submit" value="Send">
+			</form>
+		</div>
 	</body>
 </html>
 

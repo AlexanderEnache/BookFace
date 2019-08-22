@@ -23,7 +23,7 @@
 			if($post){
 				(new post($connection, $post['text'], $post['crt_at'], $post['id'], $post['imgid']))->showPost();
 			}else{
-				header("Location: home.php");
+				header("Location: index.php");
 			}
 		?>
 	</body>

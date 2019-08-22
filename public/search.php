@@ -13,7 +13,7 @@
 		$result = mysqli_query($connection, "select * from userlog where name='".$_SESSION['find']."'; ");
 		unset($_SESSION['find']);
 	}else{
-		Header('Location: home.php');
+		Header('Location: index.php');
 	}
 
 ?>

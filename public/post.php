@@ -11,7 +11,7 @@
 
 	if(!isset($_SESSION['username'])){
 		echo '<h1>You are not logged in</h1>';
-		header("Location: home.php");
+		header("Location: index.php");
 	}
 
 	if(isset($_POST['submit'])){
@@ -60,12 +60,14 @@
 	
 	<body>
 	<?php include 'navbar.php';?>
-		<h1>Post</h1>
-		<form action="post.php" method="POST" enctype="multipart/form-data">
-			<textarea name="post" placeholder="Post here"></textarea>
-			<input type="file" name="image"/>
-			<input type="submit" name="submit"/>
-		</form>
+		<div class='blue-box post-blue-box'>
+			<form class='form post-form' action="post.php" method="POST" enctype="multipart/form-data">
+				<h1>Post</h1>
+				<textarea class='form-input post-form-input' name="post" placeholder="Post here"></textarea>
+				<input class='form-input' type="file" name="image"/>
+				<input class='form-button post-form-button' type="submit" name="submit"/>
+			</form>
+		</div>
 	</body>
 </html>
 
