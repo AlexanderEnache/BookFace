@@ -167,7 +167,7 @@ body{
 	padding: 20px;
 }
 
-.chat-box{
+#chat-box{
 	/* border: 2px black solid; */
 	display: flex;
 	position: fixed;
@@ -176,11 +176,35 @@ body{
 	/* width: 100%; */
 }
 
+#chat{
+	overflow-y: scroll;
+	height: 300px;
+}
+
 .chat-window{
 	border: 1px gray solid;
 	flex: 1;
-	width: 150px;
+    width: auto;
 	position: relative;
+	/* height: auto; */
+	background-color: white;
+}
+
+.chat-window-open{
+	width: 225px;
+}
+
+#chat-text{
+	resize: none;
+	width: 100%;
+}
+
+.chat-window-item{
+	display:inline;
+}
+
+.chat-window-button{
+	display:inline;
 }
 
 

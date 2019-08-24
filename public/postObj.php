@@ -53,8 +53,9 @@
 		
 		public function DateDiff($epoch){
 			$diff = time() - $epoch;
+			$time = time() - $diff;
 			if($diff > 86400){
-				return (new DateTime("@$diff"))->format('Y-m-d');
+				return (new DateTime("@$time"))->format('Y-m-d');
 			}else{
 				if($diff > 3600){
 					return (string)((int)((new DateTime("@$diff"))->format('H')))." hours ago";

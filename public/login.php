@@ -29,7 +29,7 @@
 			echo '<h3>Wrong username</h3>';
 		}
 		unset($_POST);
-		header("Location: index.php");
+		//header("Location: index.php");
 	}
 
 ?>
