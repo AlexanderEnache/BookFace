@@ -23,18 +23,6 @@
 		header("Location: index.php");
 	}
 
-/*
-<div class='blue-box'>
-			<form class="form" action="login.php" method="post">
-				<h1>Log in</h1>
-				<input class='form-input' type='text' placeholder='Username' name='username'/> <br><br>
-				<input class='form-input' type='password' placeholder='Password' name='password'/> <br><br>
-				<input class='form-button' type="submit" name="submit" value="Send"> <br><br>
-				<a class='form-link' href='signup.php'>Create account</a>
-			</form>
-		</div>
-*/
-
 ?><!DOCTYPE html>
 <html>
 
