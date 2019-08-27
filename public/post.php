@@ -17,11 +17,6 @@
 			
 			$target = "images/".$imgid.".jpg";
 			
-			//$imgid = firstRow(mysqli_query($connection, "select * from image where id = '".$id."';"));
-			//echo $imgid['image'];
-			
-			//echo '<p>'.$id.'</p>';
-			
 			if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
 				//echo '<h1>Wirked</h1>';
 			}else{
@@ -51,8 +46,8 @@
 	?><div class='blue-box post-blue-box'>
 			<form class='form post-form' action="post.php" method="POST" enctype="multipart/form-data">
 				<h1>Post</h1>
-				<textarea class='form-input post-form-input' name="post" placeholder="Post here"></textarea>
-				<input class='form-input' type="file" name="image"/>
+				<textarea class='post-form-input' name="post" placeholder="Post here"></textarea><br>
+				<input class='form-input' type="file" name="image"/><br><br>
 				<input class='form-button post-form-button' type="submit" name="submit"/>
 			</form>
 		</div>
