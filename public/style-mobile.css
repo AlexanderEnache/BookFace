@@ -40,18 +40,24 @@
 		padding-left:20px;
 	}
 	
-	.search-user-bar{
-		width: 65%;
-		height: 25px;
-		border: none;
-		border-radius: 14px;
-	}
-	
 	.search-user-button {
 		width: 27px;
 		height: 27px;
 		border-radius: 50%;
 		border: none;
+		
+		/* position:relative; */
+		/* float:right; */
+	}
+	
+	.search-user-bar{
+		width: 65%;
+		height: 25px;
+		border: none;
+		border-radius: 14px;
+		
+		/* position:relative; */
+		/* float:right; */
 	}
 
 }

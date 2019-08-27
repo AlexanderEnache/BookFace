@@ -37,12 +37,14 @@ body{
 
 .search-user-li{
 	flex:12;
+	position: relative;
 }
 
 .search-user-form{
-	position:relative;
-	top:15px;
+	position:absolute;
+	top:50%;
 	transform: translateY(-50%);
+	width: 100%;
 }
 
 .search-user-bar{
