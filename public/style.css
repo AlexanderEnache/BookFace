@@ -333,15 +333,26 @@ body{
 
 .navlinks{
 	font-size: 13px;
+	padding-left:10px;
 }
 
+.search-user-bar{
+	width: 70%;
+    height: 22px;
+    border-radius: 14px;
+	padding-left: 10px;
+}
 
+.search-user-button{
+	width: 25px;
+    height: 25px;
+    border-radius: 50%;
+	background-color: white;
+}
 
-/* .logo{
-	font-family: 'Klavica-Bold';
-	flex:4;
-	text-align:left;
-} */
+.logo{
+	margin-right:5px;
+}
 
 }
 
