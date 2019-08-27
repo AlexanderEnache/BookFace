@@ -43,8 +43,8 @@
 	</head>
 	
 	<body><?php include 'navbar.php';
-	?><div class='blue-box post-blue-box'>
-			<form class='form post-form' action="post.php" method="POST" enctype="multipart/form-data">
+	?><div class='blue-box'>
+			<form class='post-form' action="post.php" method="POST" enctype="multipart/form-data">
 				<h1>Post</h1>
 				<textarea class='post-form-input' name="post" placeholder="Post here"></textarea><br>
 				<input class='form-input' type="file" name="image"/><br><br>
