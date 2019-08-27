@@ -48,6 +48,10 @@
 	.blue-box{
 		width: 60%;
 	}
+	
+	.form-input {
+		height: 10px;
+	}
 
 }
 
