@@ -53,8 +53,8 @@
 			
 		});
 	</script>
-	<style>
-	@media only screen and (max-width: 1440px){
+<style>
+@media only screen and (max-width: 768px){
 	
 .navbar{
 	background-color:red;
@@ -85,7 +85,7 @@
 }
 
 }
-	</style>
+</style>
 </head>
 
 <body>
