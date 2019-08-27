@@ -9,6 +9,17 @@
 		font-size: 13px;
 		padding-left:10px;
 	}
+	
+	.search-user-li{
+		position: relative;
+	}
+
+	.search-user-form{
+		position:absolute;
+		top:50%;
+		transform: translateY(-50%);
+		width: 100%;
+	}
 
 	.search-user-bar{
 		width: 70%;
@@ -38,6 +49,17 @@
 	
 	.navlinks{
 		padding-left:20px;
+	}
+	
+	.search-user-li{
+		position: relative;
+	}
+
+	.search-user-form{
+		position:absolute;
+		top:50%;
+		transform: translateY(-50%);
+		width: 100%;
 	}
 	
 	.search-user-button {

@@ -38,8 +38,6 @@ body{
 .search-user-li{
 	flex:12;
 	position: relative;
-	/* height:100%; */
-	top:50%;
 }
 
 .search-user-form{
