@@ -1,13 +1,7 @@
-<?php session_start(); ?>
-
-<style>
-<?php include 'style.css'?>
-</style>
-
-<?php include 'connection.php'?>
-<?php include 'userObj.php'?>
-
 <?php
+include 'connection.php';
+include 'userObj.php';
+session_start();
 
 	if($_SESSION['find']){
 		$result = mysqli_query($connection, "select * from userlog where name='".$_SESSION['find']."'; ");
@@ -16,9 +10,7 @@
 		Header('Location: index.php');
 	}
 
-?>
-
-<html>
+?><html>
 
 	<head>
 		<title>AssFace</title>
@@ -26,10 +18,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body>
-	<?php include 'navbar.php';?>
-		<h1>Search</h1>
-		<?php
+	<body><?php include 'navbar.php';
+	echo '<h1>Search</h1>';
 			$num = 0;
 			while($current = mysqli_fetch_assoc($result)){
 				$num++;
@@ -38,8 +28,7 @@
 			if(!$num){
 				echo "<h2>No results found</h2>"; 
 			}
-		?>
-	</body>
+	?></body>
 
 </html>
 

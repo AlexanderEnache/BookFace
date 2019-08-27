@@ -1,7 +1,4 @@
-
-<?php include 'connection.php'; session_start()?>
-
-<?php
+<?php include 'connection.php'; session_start();
 
 	if(($index = Find($_SESSION['chatidList'], $_POST['chatid']))>=0){
 		array_splice($_SESSION['chatidList'], $index, 1);
@@ -20,9 +17,7 @@
 		return -1;
 	}
 	
-?>
-
-<script>
+?><script>
 	//$(document).ready(function(){
 		$('#chat-box').load('showChat.php');
 	//});

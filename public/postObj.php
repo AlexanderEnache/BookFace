@@ -1,8 +1,6 @@
-
-<?php include 'connection.php'?>
-<?php include 'lib.php'?>
-
-<?php
+<?php 
+include 'connection.php';
+include 'lib.php';
 
 	class post{
 		
@@ -92,10 +90,3 @@
 	}
 
 ?>
-
-
-
-
-
-
-

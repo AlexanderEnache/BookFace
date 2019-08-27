@@ -1,6 +1,4 @@
-<?php include 'connection.php'; session_start()?>
-
-<?php
+<?php include 'connection.php'; session_start();
 	
 	if(!isset($_SESSION['chatidList'])){
 		$_SESSION['chatidList'] = array();
@@ -21,9 +19,7 @@
 		return true;
 	}
 	
-?>
-
-<script>
+?><script>
 	//$(document).ready(function(){
 		$('#chat-box').load('showChat.php');
 	//});

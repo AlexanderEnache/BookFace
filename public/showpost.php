@@ -1,12 +1,4 @@
-<?php session_start(); ?>
-
-<?php include 'connection.php'?>
-<?php include 'postObj.php'?>
-
-<style>
-<?php include 'style.css'?>
-</style>
-
+<?php session_start(); include 'connection.php'; include 'postObj.php'?><!DOCTYPE html>
 <html>
 
 	<head>
@@ -15,9 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body>
-	<?php include 'navbar.php';?>
-		<?php
+	<body><?php include 'navbar.php';
 			$result = mysqli_query($connection, "select * from postlog where id = ".$_GET['id'].";");
 			$post = firstRow($result);
 			if($post){
@@ -25,8 +15,7 @@
 			}else{
 				header("Location: index.php");
 			}
-		?>
-	</body>
+	?></body>
 
 </html>
 

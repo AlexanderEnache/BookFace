@@ -1,13 +1,4 @@
-<?php session_start(); ?>
-
-<?php include 'connection.php' ?>
-<?php include 'lib.php' ?>
-
-<style>
-<?php include 'style.css'?>
-</style>
-
-<?php
+<?php session_start(); include 'connection.php'; include 'lib.php';
 
 	if(!isset($_SESSION['username'])){
 		echo '<h1>You are not logged in</h1>';
@@ -47,9 +38,7 @@
 		
 	}
 
-?>
-
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html>
 
 	<head>
@@ -58,9 +47,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body>
-	<?php include 'navbar.php';?>
-		<div class='blue-box post-blue-box'>
+	<body><?php include 'navbar.php';
+	?><div class='blue-box post-blue-box'>
 			<form class='form post-form' action="post.php" method="POST" enctype="multipart/form-data">
 				<h1>Post</h1>
 				<textarea class='form-input post-form-input' name="post" placeholder="Post here"></textarea>

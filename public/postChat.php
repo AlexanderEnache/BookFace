@@ -1,6 +1,4 @@
-<?php include 'connection.php'?>
-
-<?php
+<?php include 'connection.php';
 	$text = $_POST['text'];
 	$user = $_POST['user'];
 	$chatid = $_POST['chatid'];

@@ -1,12 +1,4 @@
-<?php session_start(); ?>
-
-<?php include 'connection.php'?>
-
-<style>
-<?php include 'style.css'?>
-</style>
-
-<?php
+<?php session_start(); include 'connection.php';
 
 	if(isset($_POST['submit'])){
 		
@@ -23,9 +15,7 @@
 		}
 	}
 
-?>
-
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html>
 
 	<head>
@@ -34,28 +24,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body>
-	<?php include 'navbar.php';?>
-		<h1>Home</h1>
+	<body><?php include 'navbar.php';
+	?><h1>Home</h1>
 		<form method="post" action="pic.php" enctype="multipart/form-data">
 			<input type="file" name="image"/>
 			<input type="submit" name="submit"/>
 		</form>
 	</body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

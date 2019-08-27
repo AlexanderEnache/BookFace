@@ -1,6 +1,4 @@
-<?php include 'connection.php'; session_start()?>
-
-<?php
+<?php include 'connection.php'; session_start();
 	$user = $_POST['user'];
 	$result = mysqli_query($connection, 
 	'select * from chatlog where recipient = "'.$user.'" or author = "'.$user.'";');
@@ -21,9 +19,7 @@
 		echo '<li>You are not logged in</li>';
 	}
 
-?>
-
-<script>
+?><script>
 
 	function Clicked(chatid, user){
 		$('#chat-box').load('chatOpen.php', {

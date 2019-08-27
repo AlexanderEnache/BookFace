@@ -1,5 +1,3 @@
-
-
 <?php
 
 	class user{
@@ -17,7 +15,7 @@
 		public function toString(){
 			echo "<div class='post'>
 					<h3>
-						<a href='page.php?id=".$this->id."'>".$this->username."</a>
+						<a href='page.php?id=".$this->id."'>".$this->name."</a>
 					</h3>
 				</div>";
 		}
@@ -29,4 +27,3 @@
 	}
 
 ?>
-

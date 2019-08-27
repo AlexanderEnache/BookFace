@@ -1,10 +1,4 @@
-<?php include 'connection.php'?>
-
-<style>
-<?php include 'style.css'?>
-</style>
-
-<?php 
+<?php include 'connection.php';
 
 	if(isset($_POST['submit'])){
 		
@@ -43,19 +37,19 @@
 		
 	}
 
-?>
-
+?><!DOCTYPE html>
 <html>
 
 	<head>
 		<title>AssFace</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body>
-	<?php include 'navbar.php'; ?>
-		<div class='blue-box'>
-			<form class='form' action="signup.php" method="post">
+	<body><?php 
+	include 'navbar.php'; 
+	?><div class='blue-box'>
+			<form action="signup.php" method="post">
 				<h1>Sign Up</h1>
 				<input class='form-input' type='text' placeholder='Full Name' name='name'/> <br><br>
 				<input class='form-input' type='text' placeholder='Username' name='username'/> <br><br>
@@ -66,20 +60,6 @@
 		</div>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

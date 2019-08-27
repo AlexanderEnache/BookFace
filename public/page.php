@@ -1,12 +1,4 @@
-<?php session_start(); ?>
-
-<?php include 'connection.php'?>
-<?php include 'postObj.php'?>
-
-<style>
-<?php include 'style.css'?>
-</style>
-
+<?php session_start(); include 'connection.php'; include 'postObj.php'?><!DOCTYPE html>
 <html>
 
 	<head>
@@ -15,15 +7,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body>
-	<?php include 'navbar.php';?>
-		<h1>Home</h1>
-		<?php
+	<body><?php include 'navbar.php';
+	
+	$result = mysqli_query($connection, "select * from userlog where id = ".$_GET['id'].";");
+	
+	echo '<h1>'.firstRow($result)['name'].'</h1>';
 			if(isset($_SESSION['username'])){
-				$result = mysqli_query($connection, "select * from postlog where userid = ".$_SESSION['id'].";");
+				$result = mysqli_query($connection, "select * from postlog where userid = ".$_GET['id'].";");
 				if(mysqli_num_rows($result)){
 					while($current = mysqli_fetch_assoc($result)){
-						(new post($current['text'], $current['crt_at'], $current['id']))->listItem();
+						(new post($current['text'], $current['crt_at'], $current['id'], $current['imgid']))->listItem();
 					}
 				}else{
 					echo "<p>This user has no posts yet</p>";
@@ -31,19 +24,9 @@
 			}else{
 				echo "<p>You not logged in</p>";
 			}
-		?>
-	</body>
+	?></body>
 
 </html>
-
-
-
-
-
-
-
-
-
 
 
 
