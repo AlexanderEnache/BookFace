@@ -328,7 +328,14 @@ body{
 	
 .navbar{
 	background-color:red;
+	padding-left: 10px;
 }
+
+.navlinks{
+	font-size: 13px;
+}
+
+
 
 /* .logo{
 	font-family: 'Klavica-Bold';
