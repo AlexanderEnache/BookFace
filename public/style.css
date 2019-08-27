@@ -323,86 +323,25 @@ body{
 }
 
 
-
-
-
-
-
-
-/*
-
-@font-face {
-	font-family: 'Klavica-Bold';
-	src: url('KlavikaBold.otf');
-}
-
-@font-face {
-	font-family: 'Klavica';
-	src: url('KlavikaRegular.otf');
-}
-
-body{
-	margin-top:90px;
-}
-
+@media only screen and (max-width: 500px){
+	
 .navbar{
-	background-color:#3b5998;
+	background-color:red;
 	color:white;
-	position: absolute;
-	left:0px;
-	top:0px;
 	width: 100%;
+	padding: 
+}
+
+/* .logo{
 	font-family: 'Klavica-Bold';
-	padding-left: 15px;
-	display:flex;
-}
+	flex:4;
+	text-align:left;
+} */
 
-.logo{
-	font-size:30px;
-	display:inline-block;
-	flex:3;
-}
-
-li{
-	display:inline;
-	flex:1;
-}
-
-a{
-	text-decoration: none;
-}
-
-.navlinks{
-	display:inline-block;
-	position: relative;
-	right:0px;
-	flex:7;
-	display: flex;
-	text-align: center;
-	top: 10px;
-}
-
-.navlink{
-	color: white;
-	flex:1;
-}
-
-.post{
-	border: 2px solid #3b5998;
-}
-
-.postimg{
-	length:60px;
-	width:60px;
-}
-
-.findFriend{
-	bottom:0px;
 }
 
 
 
-*/
 
 
 
@@ -411,22 +350,21 @@ a{
 
 
 
-/* 
 
-create table userlog(id serial, name varchar(20), username varchar(20), password varchar(20), crt_at bigint);
-create table postlog(id serial, userid int, text varchar(5000), crt_at bigint);
 
-insert into userlog (name, username, password) values ('me', 'root', 'password'); 
 
-while($current = mysqli_fetch_assoc($result)){
-	echo $current['id'];
-}
 
-		$result = mysqli_query($connection, 'select * from userlog');
-		while($current = mysqli_fetch_assoc($result)){
-			echo $current['username'];
-			echo '<br>';
-		}
+
+
+
+
+
+
+
+
+
+
+
 
 /* mysql://bde82497d2b3f6:a2ada8ae@us-cdbr-iron-east-02.cleardb.net/heroku_7a120ebf6cf312b?reconnect=true */
 
