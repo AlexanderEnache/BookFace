@@ -47,6 +47,10 @@
 	
 	.blue-box{
 		width: 60%;
+		top: 60px;
+		
+		border-radius: 15px;
+		padding: 10px 35px 30px 35px;
 	}
 	
 	.form-input {
