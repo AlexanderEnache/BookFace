@@ -323,13 +323,12 @@ body{
 }
 
 
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1600px){
 	
 .navbar{
 	background-color:red;
 	color:white;
-	width: 100%;
-	padding: 
+	width: 100%; 
 }
 
 /* .logo{
