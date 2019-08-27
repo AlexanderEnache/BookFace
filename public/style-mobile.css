@@ -1,3 +1,58 @@
+
+
+@media only screen and (max-width: 768px){
+	
+	.navbar{
+		background-color:green;
+	}
+
+	.logo{
+		font-size:12px;
+	}
+	
+	.navlinks{
+		padding-left:20px;
+	}
+	
+	.search-user-li{
+		position: relative;
+	}
+
+	.search-user-form{
+		position:absolute;
+		top:50%;
+		transform: translateY(-50%);
+		width: 100%;
+	}
+	
+	.search-user-button {
+		width: 27px;
+		height: 27px;
+		border-radius: 50%;
+		border: none;
+		
+		/* position:relative; */
+		/* float:right; */
+	}
+	
+	.search-user-bar{
+		width: 65%;
+		height: 25px;
+		border: none;
+		border-radius: 14px;
+		
+		/* position:relative; */
+		/* float:right; */
+	}
+	
+	.blue-box{
+		width: 60%;
+	}
+
+}
+
+
+
 @media only screen and (max-width: 667px){
 	
 	.navbar{
@@ -37,49 +92,6 @@
 
 	.logo{
 		margin-right:5px;
-	}
-
-}
-
-@media only screen and (max-width: 768px){
-
-	.logo{
-		font-size:12px;
-	}
-	
-	.navlinks{
-		padding-left:20px;
-	}
-	
-	.search-user-li{
-		position: relative;
-	}
-
-	.search-user-form{
-		position:absolute;
-		top:50%;
-		transform: translateY(-50%);
-		width: 100%;
-	}
-	
-	.search-user-button {
-		width: 27px;
-		height: 27px;
-		border-radius: 50%;
-		border: none;
-		
-		/* position:relative; */
-		/* float:right; */
-	}
-	
-	.search-user-bar{
-		width: 65%;
-		height: 25px;
-		border: none;
-		border-radius: 14px;
-		
-		/* position:relative; */
-		/* float:right; */
 	}
 
 }
