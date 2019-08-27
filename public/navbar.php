@@ -54,37 +54,7 @@
 		});
 	</script>
 <style>
-@media only screen and (max-width: 768px){
-	
-.navbar{
-	background-color:red;
-	padding-left: 10px;
-}
-
-.navlinks{
-	font-size: 13px;
-	padding-left:10px;
-}
-
-.search-user-bar{
-	width: 70%;
-    height: 22px;
-    border-radius: 14px;
-	padding-left: 10px;
-}
-
-.search-user-button{
-	width: 25px;
-    height: 25px;
-    border-radius: 50%;
-	background-color: white;
-}
-
-.logo{
-	margin-right:5px;
-}
-
-}
+<?php include 'style-mobile.css'?>
 </style>
 </head>
 
