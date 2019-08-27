@@ -1,31 +1,53 @@
 @media only screen and (max-width: 667px){
 	
-.navbar{
-	background-color:red;
-	padding-left: 10px;
+	.navbar{
+		background-color:red;
+		padding-left: 10px;
+	}
+
+	.navlinks{
+		font-size: 13px;
+		padding-left:10px;
+	}
+
+	.search-user-bar{
+		width: 70%;
+		height: 22px;
+		border-radius: 14px;
+		padding-left: 10px;
+	}
+
+	.search-user-button{
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background-color: white;
+	}
+
+	.logo{
+		margin-right:5px;
+	}
+
 }
 
-.navlinks{
-	font-size: 13px;
-	padding-left:10px;
-}
+@media only screen and (max-width: 768px){
 
-.search-user-bar{
-	width: 70%;
-    height: 22px;
-    border-radius: 14px;
-	padding-left: 10px;
-}
-
-.search-user-button{
-	width: 25px;
-    height: 25px;
-    border-radius: 50%;
-	background-color: white;
-}
-
-.logo{
-	margin-right:5px;
-}
+	.logo{
+		font-size:12px;
+	}
+	
+	.navlinks{
+		padding-left:20px;
+	}
+	
+	.search-user-bar{
+		width: 65%;
+		height: 25px;
+	}
+	
+	.search-user-button {
+		width: 27px;
+		height: 27px;
+	}
 
 }
