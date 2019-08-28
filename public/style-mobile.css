@@ -80,7 +80,7 @@
 @media only screen and (max-width: 667px){
 	
 	.navbar{
-		background-color:red;
+		background-color:#3b5998;
 		margin:0px;
 		height: auto;
 	}
@@ -90,6 +90,21 @@
 		margin:0px;
 		padding:0px;
 		flex-direction: column;
+	}
+	
+	.navlink{
+		width:100%;
+		height: 40px;
+		line-height: 40px;
+	}
+	
+	.logo{
+		margin: 0;
+	}
+	
+	.logo > h1{
+		margin-bottom: 10px;
+		font-size: 30px;
 	}
 	
 	.search-user-li{

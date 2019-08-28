@@ -45,6 +45,7 @@ body{
 	flex:4;
 	text-align:left;
 	font-size:15px;
+	/* border: 1px solid white; */
 }
 
 .search-user-li{
@@ -60,16 +61,16 @@ body{
 }
 
 .search-user-bar{
-	width: 50%;
-    height: 28px;
+	width: 60%;
+    height: 25px;
     border: none;
     border-radius: 14px;
 	padding-left: 10px;
 }
 
 .search-user-button{
-	width: 30px;
-    height: 30px;
+	width: 26px;
+    height: 26px;
     border-radius: 50%;
 	border: none;
 	background-color: white;
