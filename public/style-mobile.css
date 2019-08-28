@@ -4,7 +4,7 @@
 	
 	.navbar{
 		background-color:green;
-		height: 52px;
+		height: 53px;
 	}
 	
 	.logo{
@@ -17,8 +17,8 @@
 	}
 	
 	.navlink{
-		height: 52px;
-		line-height: 52px;
+		height: 53px;
+		line-height: 53px;
 	}
 	
 	.navlink > a{
