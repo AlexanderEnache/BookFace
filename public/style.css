@@ -11,6 +11,7 @@ body{
 	color:white;
 	width: 100%;
 	position:relative;
+	height: 55px;
 }
 
 .navlinks{
@@ -20,6 +21,7 @@ body{
 	position: relative;
 	margin: 0;
 	font-size: 16px;
+	list-style-type: none;
 	height:100%;
 }
 
@@ -28,11 +30,12 @@ body{
 	flex:4;
 	list-style-type: none;
 	color: white;
-	height:75px;
+	/* border: 1px solid white; */
 }
 
-.navlink > a{
-	line-height: 75px;
+.navlink{
+	height: 55px;
+    line-height: 55px;
 }
 
 .no-decoration{
@@ -44,6 +47,7 @@ body{
 	font-family: 'Klavica-Bold';
 	flex:4;
 	text-align:left;
+	font-size:15px;
 }
 
 .search-user-li{

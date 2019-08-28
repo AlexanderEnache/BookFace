@@ -2,38 +2,12 @@
 
 @media only screen and (max-width: 768px){
 	
-	/* .navbar{
-		background-color:green;
-		margin:0px;
-	}
-
-	.logo{
-		font-size:12px;
-	}
-	
-	.navlinks{
-		margin:0px;
-		padding:0px;
-		position:relative;
-		border: 1px solid white;
-	}
-	
-	.navlink{
-		height:25px;
-		border: 1px solid white;
-	}
-	
-	.no-decoration{
-		text-decoration:none;
-		color:white;
-	} */
-	
 	.navbar{
 		background-color:green;
 	}
 	
-	.search-user-li{
-		/* position: relative; */
+	.navlinks{
+		padding-left:20px;
 	}
 
 	.search-user-form{
@@ -44,23 +18,18 @@
 	}
 	
 	.search-user-button {
-		width: 27px;
-		height: 27px;
+		width: 22px;
+		height: 22px;
 		border-radius: 50%;
 		border: none;
-		
-		/* position:relative; */
-		/* float:right; */
+		font-size: 12px;
 	}
 	
 	.search-user-bar{
-		width: 65%;
-		height: 25px;
+		width: 70%;
+		height: 20px;
 		border: none;
 		border-radius: 14px;
-		
-		/* position:relative; */
-		/* float:right; */
 	}
 	
 	.blue-box{
@@ -97,6 +66,7 @@
 	.navbar{
 		background-color:red;
 		margin:0px;
+		height: auto;
 	}
 
 	.navlinks{
