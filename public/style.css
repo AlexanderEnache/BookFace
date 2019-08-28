@@ -53,10 +53,10 @@ body{
 }
 
 .search-user-form{
-	position:absolute;
+	/* position:absolute;
 	top:50%;
 	transform: translateY(-50%);
-	width: 100%;
+	width: 100%; */
 }
 
 .search-user-bar{
