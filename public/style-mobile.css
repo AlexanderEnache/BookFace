@@ -8,6 +8,15 @@
 	
 	.navlinks{
 		padding-left:20px;
+		list-style-type: none;
+	}
+	
+	.navlink > a{
+		text-decoration:none;
+	}
+	
+	.logo{
+		font-size:13px;
 	}
 
 	.search-user-form{
