@@ -4,10 +4,6 @@
 		$(document).ready(function(){
 			
 			let lock = false;
-			//$('#chat').animate({scrollTop: $('#chat')[0].scrollHeight}, 1500);
-			/*$('#chat').load('loadChat.php', {
-					chatid: $('#chatid').text()
-				});*/
 
 			setInterval(function() {
 				$('#chat').load('loadChat.php', {

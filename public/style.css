@@ -10,6 +10,7 @@ body{
 	background-color:#3b5998;
 	color:white;
 	width: 100%;
+	position:relative;
 }
 
 .navlinks{
@@ -19,14 +20,41 @@ body{
 	position: relative;
 	margin: 0;
 	font-size: 16px;
+	height:100%;
 }
 
 .navlink{
+	position:relative;
 	flex:4;
-	text-decoration: none;
 	list-style-type: none;
 	color: white;
-	/* border: solid 1px white; */
+	height:75px;
+}
+
+.navlink > a{
+	line-height: 75px;
+}
+
+/* .navbar{
+	background-color:#3b5998;
+	color:white;
+	width: 100%;
+	position:relative;
+}
+
+.navlinks{
+	display:flex;
+	margin:0;
+	height:100%;
+}
+
+.navlink{
+	height:75px;
+}  */
+
+.no-decoration{
+	text-decoration:none;
+	color:white;
 }
 
 .logo{
@@ -321,7 +349,15 @@ body{
 
 
 
+/* 
 
+style navbar for vertical screen
+Make chat initiate
+style chat bar for mobile
+style post list screen
+style user list screen
+
+ */
 
 
 

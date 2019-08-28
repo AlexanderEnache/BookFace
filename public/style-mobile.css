@@ -82,8 +82,9 @@
 	}
 
 	.navlinks{
-		font-size: 13px;
+		/* font-size: 13px; */
 		padding-left:10px;
+		flex-direction: column;
 	}
 	
 	.search-user-li{
