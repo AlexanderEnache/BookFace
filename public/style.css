@@ -35,23 +35,6 @@ body{
 	line-height: 75px;
 }
 
-/* .navbar{
-	background-color:#3b5998;
-	color:white;
-	width: 100%;
-	position:relative;
-}
-
-.navlinks{
-	display:flex;
-	margin:0;
-	height:100%;
-}
-
-.navlink{
-	height:75px;
-}  */
-
 .no-decoration{
 	text-decoration:none;
 	color:white;

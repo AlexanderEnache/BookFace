@@ -4,6 +4,7 @@
 	
 	.navbar{
 		background-color:green;
+		margin:0px;
 	}
 
 	.logo{
@@ -11,7 +12,15 @@
 	}
 	
 	.navlinks{
-		padding-left:20px;
+		margin:0px;
+		padding:0px;
+		position:relative;
+		border: 1px solid white;
+	}
+	
+	.navlink{
+		height:25px;
+		border: 1px solid white;
 	}
 	
 	.no-decoration{
@@ -83,12 +92,13 @@
 	
 	.navbar{
 		background-color:red;
-		padding-left: 10px;
+		margin:0px;
 	}
 
 	.navlinks{
 		/* font-size: 13px; */
-		padding-left:10px;
+		margin:0px;
+		padding:0px;
 		flex-direction: column;
 	}
 	
@@ -97,7 +107,7 @@
 	}
 
 	.search-user-form{
-		position:absolute;
+		position:relative;
 		top:50%;
 		transform: translateY(-50%);
 		width: 100%;
