@@ -22,6 +22,7 @@
 ?><script>
 
 	function Clicked(chatid, user){
+		// console.log(chatid, user);
 		$('#chat-box').load('chatOpen.php', {
 			chatid: chatid,
 			user: user

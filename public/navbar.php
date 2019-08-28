@@ -53,9 +53,7 @@
 			
 		});
 	</script>
-<style type="text/css">
-<?php include 'style-mobile.css'?>
-</style>
+<style type="text/css"><?php include 'style-mobile.css'?></style>
 </head>
 
 <body>

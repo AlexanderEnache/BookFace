@@ -17,6 +17,7 @@
 					<h3>
 						<a href='page.php?id=".$this->id."'>".$this->name."</a>
 					</h3>
+					<button onclick='startChat(".'"'.$this->username.'"'.")'>Message</button>
 				</div>";
 		}
 	
@@ -26,4 +27,18 @@
 	
 	}
 
-?>
+?><p id="garbage" style='display:none;'></p>
+<script>
+
+
+function startChat(user){
+	//console.log(user);
+	$('#garbage').load('startChat.php', {
+		user: user
+	});
+}
+
+
+</script>
+
+
