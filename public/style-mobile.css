@@ -4,11 +4,17 @@
 	
 	.navbar{
 		background-color:green;
+		height: 50px;
 	}
 	
 	.navlinks{
 		padding-left:20px;
 		list-style-type: none;
+	}
+	
+	.navlink{
+		height: 50px;
+		line-height: 50px;
 	}
 	
 	.navlink > a{
