@@ -5,7 +5,7 @@
 			
 			let lock = false;
 
-			setInterval(function() {
+			/* setInterval(function() {
 				$('#chat').load('loadChat.php', {
 					chatid: $('#chatid').text()
 				});
@@ -13,7 +13,7 @@
 					$('#chat').animate({scrollTop: $('#chat')[0].scrollHeight}, 1500);
 					lock = false;
 				}
-			}, 1000);
+			}, 1000); */
 			
 			$('#btn').click(function(){
 				$('#send').load('postChat.php', {
@@ -26,17 +26,17 @@
 			});
 		});
 	</script>
-
-	<div id='chat'>
-	</div>
 	
 	<div id="send" style="display:none;"></div>
 	<div id="user" style="display:none;"><?php echo $_SESSION['name']?></div><?php
 		echo '<div id="chatid" style="display:none;"><?php echo $_SESSION["name"]?>'.$_SESSION['chatid-current'].'</div>';
-	?>
-	<textarea id='chat-text'></textarea>
-		
-	<button id='btn'>Send</button>
+	?><div id='chat'>
+	</div>
+	
+	<div class='chat-send'>
+		<textarea id='chat-text'></textarea>	
+		<button id='btn'>Send</button>
+	</div>
 
 
 

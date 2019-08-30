@@ -20,6 +20,8 @@
 ?><script>
 	//$(document).ready(function(){
 		$('#chat-box').load('showChat.php');
+		// console.log($(document).width());
+		// console.log($(document).height());
 	//});
 </script>
 

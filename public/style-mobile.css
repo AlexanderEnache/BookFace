@@ -154,5 +154,43 @@
 		
 		position: relative;
 	}
+	
+	
+/* #chat-box{	
+	height:100%;
+	width:100%;
+} */
+
+.chat-window-wide{
+	position:absolute;
+	top: 0;
+	height:100%;
+	width:100%;
+	background-color: white;
+    z-index: 100;
+	display: flex;
+	flex-flow: column;
+}
+
+/* .chat-window-bar{
+	width: 100%;
+} */
+
+/* #chat{
+	flex-grow : 1;
+} */
+
+.chat-window-open{
+	width: 100%;
+	position:relative;
+	flex-grow : 1;
+	
+	display: flex;
+	flex-flow: column;
+}
 
 }
+
+
+
+

@@ -5,18 +5,20 @@
 	for($i = 0; $i < sizeof($chatidList); $i++){
 		echo 
 			"<div id ='chat-window-".$chatidList[$i]."' class='chat-window'>
-				<div>
+				<div class='chat-window-bar'>
 					<p class='chat-window-item' onclick='openChatWindow(".$chatidList[$i].")'>".$chatidList[$i]." || ".$userList[$i]."</p>
-					<button class='chat-window-button' onclick='closeChat(".$chatidList[$i].")'>X</button>";
+					<div class='chat-window-buttons'>
+						<button class='chat-window-button' onclick='closeChat(".$chatidList[$i].")'>X</button>";
 		
 	$_SESSION['chatid-current'] = $chatidList[$i];
 	if(isset($_POST['chatid'])){
 		if($chatidList[$i] == $_POST['chatid']){ echo "
-					<button class='chat-window-button' onclick='minChat()'>_</button>
+						<button class='chat-window-button' onclick='minChat()'>_</button>
+					</div>
 				</div>
 				<div class='chat-window-open'>"; include 'chat.php'; echo '</div>';
 		}else{
-		echo	'</div>';
+		echo	'</div></div>';
 		}
 	}else{
 		echo "</div>";
@@ -35,7 +37,30 @@
 		$('#chat-box').load('showChat.php', {
 			chatid: id
 		});
-		$('#chat-window-'+id).css("height", "600px");
+		
+		if($(document).width()<=699){
+			$('#chat-box').css("height", "100%");	
+			$('#chat-box').css("width", "100%");	
+
+			// $(".chat-window-bar").css("width", "100%");
+			
+			// $("#chat").css("flex-grow", "1");
+			
+			// $("#chat-window-bar-"+id).css("width", "100%");
+			
+			$("#chat-window-"+id).toggleClass("chat-window-wide");
+			console.log("SMALLER");
+		}else{
+			console.log("BIGGER");
+		}
+		
+		// $('#chat-window-'+id).css("height", "600px");
+		// $('#chat-window-'+id).css("width", "600px");
+		/* $('#chat-window'+id).css("height", $(document).height());
+		$('#chat-window-'+id).css("width", $(document).width());
+		$('#chat-window-'+id).css("position","absolute"); */
+		// $('#chat-window-'+id).css("z-index", "10");
+		//console.log(id);
 	}
 	
 	function minChat(){
