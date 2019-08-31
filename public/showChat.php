@@ -39,39 +39,44 @@ for($i = 0; $i < sizeof($chatidList); $i++){
 }
 
 ?><script>
-
+		
+	chatOpen = sessionStorage.getItem("chatOpen");
+		
+	if(chatOpen != null) {
+			console.log("Session set " + chatOpen);
 		if($(document).width()<=699){
 			$('#chat-box').css("height", "100%");	
-			$('#chat-box').css("width", "100%");	
-
-			$(".chat-window-bar").css("width", "100%");
-			
+			$('#chat-box').css("width", "100%");
 			$("#chat").css("flex-grow", "1");
-			
-			console.log("SMALLER");
-		}else{
-			console.log("BIGGER");
 		}
+		// openChatWindow(chatOpen);
+	}else{
+			console.log("Session NOT set");
+			$('#chat-box').css("height", "auto");	
+			$('#chat-box').css("width", "300px");	
+	}
 
 	function closeChat(id){
+		/* if(id == sessionStorage.getItem("chatOpen")){
+			sessionStorage.setItem("chatOpen", "null");
+		} */
+		sessionStorage.removeItem("chatOpen");
 		$('#chat-box').load('closeChat.php', {
 			chatid: id
 		});
 	}
 	
 	function openChatWindow(id){
+		sessionStorage.setItem("chatOpen", id);
 		$('#chat-box').load('showChat.php', {
 			chatid: id
 		});
 	}
 	
 	function minChat(){
-		$('#chat-box').css("height", "");	
-		$('#chat-box').css("width", "");	
-
-		$(".chat-window-bar").css("width", "");
-			
-		$("#chat").css("flex-grow", "");
+		sessionStorage.removeItem("chatOpen");
+		$('#chat-box').css("height", "20px");	
+		$('#chat-box').css("width", "20px");
 		
 		$('#chat-box').load('showChat.php');
 	}
