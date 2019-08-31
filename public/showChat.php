@@ -52,7 +52,7 @@ for($i = 0; $i < sizeof($chatidList); $i++){
 		// openChatWindow(chatOpen);
 	}else{
 			console.log("Session NOT set");
-			$('#chat-box').css("height", "auto");	
+			$('#chat-box').css("height", "");	
 			$('#chat-box').css("width", "300px");	
 	}
 
