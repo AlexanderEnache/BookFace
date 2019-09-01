@@ -5,7 +5,7 @@
 			
 			let lock = false;
 
-			/* setInterval(function() {
+			setInterval(function() {
 				$('#chat').load('loadChat.php', {
 					chatid: $('#chatid').text()
 				});
@@ -13,7 +13,7 @@
 					$('#chat').animate({scrollTop: $('#chat')[0].scrollHeight}, 1500);
 					lock = false;
 				}
-			}, 1000); */
+			}, 1000);
 			
 			$('#btn').click(function(){
 				$('#send').load('postChat.php', {
