@@ -36,6 +36,8 @@ function startChat(user){
 	$('#garbage').load('startChat.php', {
 		user: user
 	});
+	
+	$('#chat-box').load('showChat.php');
 }
 
 
