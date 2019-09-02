@@ -215,6 +215,7 @@ body{
 .chat-dropdown-li{
 	position: relative;
 	width: 100%;
+	cursor: pointer;
 }
 
 .post{
@@ -235,12 +236,15 @@ body{
 	background-color:white;
 	
 	width: 300px;
+	
+	z-index:30;
 }
 
 .chat-window-bar{
 	position: relative;
 	height: 25px;
 	width: 100%;
+	cursor: pointer;
 }
 
 #chat{

@@ -41,8 +41,10 @@
 		$(document).ready(function(){
 			$('#chat-hover').mouseover(function(){
 				$('#open-chats').css('display', 'block');
-				// $('#open-chats').load('loadOpenChats.php');
-				$('#open-chats').load('loadOpenChats.php');
+				setInterval(function() {
+					$('#open-chats').load('loadOpenChats.php');
+					
+				}, 30000);
 			});
 			$('#chat-hover').mouseout(function(){
 				$('#open-chats').css('display', 'none');

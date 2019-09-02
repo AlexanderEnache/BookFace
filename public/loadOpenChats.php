@@ -21,7 +21,7 @@
 
 ?><script>
 
-console.log("just loaded nav");
+console.log("LoadOpenChat");
 
 	function Clicked(chatid, user){
 		$('#chat-box').load('chatOpen.php', {
