@@ -3,17 +3,17 @@
 	<script>
 		$(document).ready(function(){
 			
-			/* let lock = false;
+			// let lock = false;
 
 			setInterval(function() {
 				$('#chat').load('loadChat.php', {
 					chatid: $('#chatid').text()
 				});
-				if(lock){
+				/* if(lock){
 					$('#chat').animate({scrollTop: $('#chat')[0].scrollHeight}, 1500);
 					lock = false;
-				}
-			}, 1000); */
+				} */
+			}, 1000);
 			
 			$('#btn').click(function(){
 				if($('#chat-text').val()){
