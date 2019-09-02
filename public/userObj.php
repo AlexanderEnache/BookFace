@@ -36,8 +36,8 @@ function startChat(user){
 		user: user
 	});
 	
-	$('#chat-box').load('showChat.php');
-	$('#open-chats').load('loadOpenChats.php');
+	// $('#chat-box').load('showChat.php');				// Make thing to open chat that was just clikced on
+	// $('#open-chats').load('loadOpenChats.php');
 }
 
 

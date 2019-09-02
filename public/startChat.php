@@ -19,4 +19,8 @@
 	END$$
 	DELIMITER ; */
 
-?>
+?><script>
+$(document).ready(function(){
+	$('#open-chats').load('loadOpenChats.php');
+});
+</script>

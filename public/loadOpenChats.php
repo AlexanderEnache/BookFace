@@ -3,7 +3,7 @@
 	// echo '<li>You are not logged '.$user.'</li>';
 	$result = mysqli_query($connection, 'select * from chatlog where recipient = "'.$_SESSION['username'].'" or author = "'.$_SESSION['username'].'";');
 	
-	if($result){
+	//if($result){
 		for($i = 0; $current = mysqli_fetch_assoc($result); $i++){
 			$j = $current['chatid'];
 			if($current['recipient'] == $_SESSION['username']){			// Make this a class template
@@ -15,9 +15,9 @@
 			$chatidList[$i] = $j;
 			$chatidUser[$i] = $k;
 		}
-	}else{
-		echo '<li>You are not logged in</li>';
-	}
+//	}else{
+	//	echo '<li>You are not logged in</li>';
+	//}
 
 ?><script>
 
