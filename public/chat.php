@@ -3,7 +3,7 @@
 	<script>
 		$(document).ready(function(){
 			
-			let lock = false;
+			/* let lock = false;
 
 			setInterval(function() {
 				$('#chat').load('loadChat.php', {
@@ -13,7 +13,7 @@
 					$('#chat').animate({scrollTop: $('#chat')[0].scrollHeight}, 1500);
 					lock = false;
 				}
-			}, 1000);
+			}, 1000); */
 			
 			$('#btn').click(function(){
 				if($('#chat-text').val()){
@@ -23,7 +23,7 @@
 						chatid: $('#chatid').text()
 					});
 					$('#chat-text').val("");
-					lock = true;
+					// lock = true;
 				}
 			});
 		});

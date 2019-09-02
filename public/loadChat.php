@@ -4,13 +4,18 @@ $result = mysqli_query($connection, 'select count(*) from chat where chatid = '.
 $count = firstRow($result)['count(*)'];
 	
 	if(isset($_SESSION['chatCount'])){
-		if(firstRow($result)['count(*)'] != $_SESSION['chatCount']){
-			printChat($connection);
+		if($count != $_SESSION['chatCount']){
 			$_SESSION['chatCount'] = $count;
+			echo "<p id='trash-garbage' style='display:none;'>New</p>";
+			printChat($connection);
+		}else{
+			echo "<p id='trash-garbage' style='display:none;'>Old</p>";
+			printChat($connection);
 		}
 	}else{
-		printChat($connection);
 		$_SESSION['chatCount'] = $count;
+		echo "<p id='trash-garbage' style='display:none;'>New</p>";
+		printChat($connection);
 	}
 	
 	function printChat($connection){
@@ -23,4 +28,32 @@ $count = firstRow($result)['count(*)'];
 			}
 		}
 	}
-?>
+?><script>
+	/* if($('#trash-garbage').innerText){
+		setInterval(function() {
+			$('#chat').animate({scrollTop: $('#chat')[0].scrollHeight}, 1500);
+		}, 1000);
+	} */
+	
+	$(document).ready(function(){
+		if($('#trash-garbage').text() == "New"){
+			$('#chat').animate({scrollTop: $('#chat')[0].scrollHeight}, 1500);
+		}
+	});
+	
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

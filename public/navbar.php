@@ -42,6 +42,7 @@
 			$('#chat-hover').mouseover(function(){
 				$('#open-chats').css('display', 'block');
 				// $('#open-chats').load('loadOpenChats.php');
+				$('#open-chats').load('loadOpenChats.php');
 			});
 			$('#chat-hover').mouseout(function(){
 				$('#open-chats').css('display', 'none');

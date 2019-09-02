@@ -28,6 +28,7 @@ console.log("just loaded nav");
 			chatid: chatid,
 			user: user
 		});
+		console.log("Clikced the chat");
 	}
 
 </script>
