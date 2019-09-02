@@ -5,7 +5,7 @@
 // Password:	bc504af6
 // Database:	heroku_f56b26996b464a9
 
-	$connection = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b43b77d43a86c7', 'bc504af6', 'heroku_f56b26996b464a9');
+	//$connection = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b43b77d43a86c7', 'bc504af6', 'heroku_f56b26996b464a9');
 	
-	//$connection = mysqli_connect('localhost', 'root', '', 'user');
+	$connection = mysqli_connect('localhost', 'root', '', 'user');
 ?>

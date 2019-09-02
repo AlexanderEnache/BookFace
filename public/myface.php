@@ -22,6 +22,7 @@
 			}else{
 				echo "<p>You not logged in</p>";
 			}
+		include 'chatbar.php';
 		?></body>
 
 </html>

@@ -16,13 +16,15 @@
 			}, 1000);
 			
 			$('#btn').click(function(){
-				$('#send').load('postChat.php', {
-					text: $('#chat-text').val(),
-					user: $('#user').text(),
-					chatid: $('#chatid').text()
-				});
-				$('#chat-text').val("");
-				lock = true;
+				if($('#chat-text').val()){
+					$('#send').load('postChat.php', {
+						text: $('#chat-text').val(),
+						user: $('#user').text(),
+						chatid: $('#chatid').text()
+					});
+					$('#chat-text').val("");
+					lock = true;
+				}
 			});
 		});
 	</script>

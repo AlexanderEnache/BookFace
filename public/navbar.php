@@ -8,11 +8,9 @@
 		$chats = 
 		"<li id='chat-hover' class='navlink'>
 			<a href='#' id='chats' class='no-decoration'>chats</a>
-			<div id='chat-list'>
-				<ul id='open-chats' class='dropdown'>
-					
-				</ul>
-			</div>
+			<ul id='open-chats' style='display:none;' class='dropdown'>
+				
+			</ul>
 		</li>
 			
 			";
@@ -42,15 +40,23 @@
 	<script>
 		$(document).ready(function(){
 			$('#chat-hover').mouseover(function(){
-				$('#chat-list').css('display', 'block');
+				$('#open-chats').css('display', 'block');
+				// $('#open-chats').load('loadOpenChats.php');
 			});
 			$('#chat-hover').mouseout(function(){
-				$('#chat-list').css('display', 'none');
+				$('#open-chats').css('display', 'none');
 			});
 			$('#open-chats').load('loadOpenChats.php', {
 				user: $('#user').text()
 			});
-			
+			$('#chat-box').load('showChat.php');
+			chatOpen = sessionStorage.getItem("chatOpen");
+			console.log(chatOpen);
+			if(chatOpen != null) {
+				$('#chat-box').load('showChat.php', {
+					chatid: chatOpen
+				});
+			}
 		});
 	</script>
 <style type="text/css"><?php include 'style-mobile.css'?></style>

@@ -32,12 +32,12 @@
 
 
 function startChat(user){
-	//console.log(user);
 	$('#garbage').load('startChat.php', {
 		user: user
 	});
 	
 	$('#chat-box').load('showChat.php');
+	$('#open-chats').load('loadOpenChats.php');
 }
 
 
