@@ -23,11 +23,11 @@
 				//echo '<h1>Didnt wirk</h1>';
 			}
 			
-			$result = mysqli_query($connection, "insert into postlog (userid, text, imgid, crt_at) values (".$_SESSION['id'].", '".$_POST['post']."', ".$imgid.", '".(string)time()."'); ");
+			$result = mysqli_query($connection, "insert into postlog (userid, title, text, imgid, crt_at) values (".$_SESSION['id'].", '".$_POST['title']."', "."'".$_POST['post']."', ".$imgid.", '".(string)time()."'); ");
 
 		}else{
 		
-			$result = mysqli_query($connection, "insert into postlog (userid, text, crt_at) values (".$_SESSION['id'].", '".$_POST['post']."', '".(string)time()."'); ");		
+			$result = mysqli_query($connection, "insert into postlog (userid, title, text, crt_at) values (".$_SESSION['id'].", '".$_POST['title']."', "."'".$_POST['post']."', '".(string)time()."'); ");		
 		
 		}
 		
@@ -43,16 +43,17 @@
 		<style><?php include 'style-mobile.css'?></style>
 	</head>
 	
-	<body><?php include 'navbar.php';
+	<body style='background-color:white'><div class='body'><?php include 'navbar.php';
 	?><div class='blue-box'>
-			<form class='post-form' action="post.php" method="POST" enctype="multipart/form-data">
-				<h1>Post</h1>
-				<textarea wrap="soft" class='post-form-input' name="post" placeholder="Post here"></textarea><br>
-				<input class='form-input' type="file" name="image"/><br><br>
-				<input class='form-button post-form-button' type="submit" name="submit"/>
-			</form>
-		</div>
-	</body>
+				<form class='post-form' action="post.php" method="POST" enctype="multipart/form-data">
+					<h1>Post</h1>
+					<input class='form-input' type="text" name="title"/><br><br>
+					<textarea wrap="soft" class='post-form-input' name="post" placeholder="Post here"></textarea><br>
+					<input class='form-input' type="file" name="image"/><br><br>
+					<input class='form-button post-form-button' type="submit" name="submit"/>
+				</form>
+			</div></div><?php include 'chatbar.php';
+		?></body>
 </html>
 
 

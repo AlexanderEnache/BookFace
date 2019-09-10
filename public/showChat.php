@@ -10,10 +10,10 @@ if(isset($_SESSION['chatidList']) && isset($_SESSION['userList'])){
 			if($chatidList[$i] == $_POST['chatid']){
 				echo "<div id ='chat-window-wide' class='chat-window'>
 						<div class='chat-window-bar'>
-							<p class='chat-window-item' onclick='openChatWindow(".$chatidList[$i].")'>".$chatidList[$i]." || ".$userList[$i]."</p>
+							<p class='chat-window-item' onclick='openChatWindow(".$chatidList[$i].")'>".$userList[$i]."</p>
 							<div class='chat-window-buttons'>
-								<button class='chat-window-button' onclick='closeChat(".$chatidList[$i].")'>X</button>
-								<button class='chat-window-button' onclick='minChat()'>_</button>
+								<button class='chat-window-button' onclick='closeChat(".$chatidList[$i].")'><i class='fas fa-times'></i></button>
+								<button class='chat-window-button' onclick='minChat()'><i class='fas fa-window-minimize'></i></button>
 							</div>
 						</div>
 						<div class='chat-window-open'>"; include 'chat.php'; echo '</div>';
@@ -21,9 +21,9 @@ if(isset($_SESSION['chatidList']) && isset($_SESSION['userList'])){
 			}else{
 				echo "<div id ='chat-window-".$chatidList[$i]."' class='chat-window'>
 						<div class='chat-window-bar'>
-							<p class='chat-window-item' onclick='openChatWindow(".$chatidList[$i].")'>".$chatidList[$i]." || ".$userList[$i]."</p>
+							<p class='chat-window-item' onclick='openChatWindow(".$chatidList[$i].")'>".$userList[$i]."</p>
 							<div class='chat-window-buttons'>
-								<button class='chat-window-button' onclick='closeChat(".$chatidList[$i].")'>X</button>
+								<button class='chat-window-button' onclick='closeChat(".$chatidList[$i].")'><i class='fas fa-times'></i></button>
 							</div>
 						</div>
 					</div>";
@@ -31,9 +31,9 @@ if(isset($_SESSION['chatidList']) && isset($_SESSION['userList'])){
 		}else{
 			echo "<div id ='chat-window-".$chatidList[$i]."' class='chat-window'>
 					<div class='chat-window-bar'>
-						<p class='chat-window-item' onclick='openChatWindow(".$chatidList[$i].")'>".$chatidList[$i]." || ".$userList[$i]."</p>
+						<p class='chat-window-item' onclick='openChatWindow(".$chatidList[$i].")'>".$userList[$i]."</p>
 						<div class='chat-window-buttons'>
-							<button class='chat-window-button' onclick='closeChat(".$chatidList[$i].")'>X</button>
+							<button class='chat-window-button' onclick='closeChat(".$chatidList[$i].")'><i class='fas fa-times'></i></button>
 						</div>
 					</div>
 				</div>";

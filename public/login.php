@@ -32,9 +32,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body><?php
+	<body style='background-color:white'><div class='body'><?php
 	include 'navbar.php'; 
-	
 	?><div class='blue-box'>
 			<form action="login.php" method="post">
 				<h1>Log in</h1>
@@ -42,9 +41,8 @@
 				<input class='form-input' type='password' placeholder='Password' name='password'/> <br><br>
 				<input class='form-button' type="submit" name="submit" value="Send"> <br><br>
 				<a class='form-link' href='signup.php'>Create account</a>
-			</form>
-		</div>
-	</body>
+			</form></div></div><?php include 'chatbar.php';
+	?></body>
 </html>
 
 

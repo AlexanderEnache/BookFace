@@ -2,8 +2,18 @@
 body{
 	margin: 0;
 	padding: 0;
-	position: relative;
 	font-family: 'Klavica';
+	background-color: #D4D8E8;
+}
+
+.body{
+	position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+	width:45%;
+	background-color: white;
+    height: 100%;
+	padding: 0px 40px 0px 40px;
 }
 
 .navbar{
@@ -222,6 +232,17 @@ body{
 	margin:1px;
 }
 
+.show-post{
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	width: 75%;
+}
+
+.show-post > img{
+	width:100%;
+}
+
 #chat-box{
 	position: fixed;
 	bottom: 0;
@@ -275,8 +296,10 @@ body{
 
 .chat-window-item{
 	margin: 0;
-	position:relative;
+	position:absolute;
 	display: inline;
+	width:calc(100% - 55px);
+	text-align:center;
 }
 
 .chat-window-buttons{
@@ -373,6 +396,28 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 
 Make chat initiate
@@ -381,46 +426,6 @@ style post list screen
 style user list screen
 
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* mysql://bde82497d2b3f6:a2ada8ae@us-cdbr-iron-east-02.cleardb.net/heroku_7a120ebf6cf312b?reconnect=true */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

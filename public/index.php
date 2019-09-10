@@ -16,13 +16,19 @@
 	
 	<body>
 	<?php include 'navbar.php';
-	?><h1>Home</h1>
+	?><div class='body'>
+	<h1>Home</h1>
 		<?php
 			if(isset($_SESSION['username'])){
 				$result = mysqli_query($connection, "select * from postlog where userid = ".$_SESSION['id'].";");
 				if(mysqli_num_rows($result)){
 					while($current = mysqli_fetch_assoc($result)){
-						(new post($current['text'], $current['crt_at'], $current['id']))->listItem();
+						(new post($current['title'], $current['text'], $current['crt_at'], $current['id']))->listItem();
+						/* echo "<h1>".$current['text']."</h1>";
+						echo "<h1>".$current['title']."</h1>";
+						echo "<h1>".$current['id']."</h1>";
+						echo "<h1>".$current['imgid']."</h1>";
+						echo "<h1>".$current['crt_at']."</h1>"; */
 					}
 				}else{
 					echo "<p>You have no posts yet</p>";
@@ -32,7 +38,6 @@
 			}
 		?>
 		
-		<?php include 'chatbar.php';
+		</div><?php include 'chatbar.php';
 		?></body>
 </html>
-

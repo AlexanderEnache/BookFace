@@ -79,6 +79,16 @@
 
 @media only screen and (max-width: 667px){
 	
+	body{
+		background-color: white;
+	}
+
+	.body{
+		position: relative;
+		padding:0;
+		width:100%;
+	}
+	
 	.navbar{
 		background-color:#3b5998;
 		margin:0px;

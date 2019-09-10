@@ -25,11 +25,14 @@
 	</head>
 	
 	<body><?php include 'navbar.php';
-	?><h1>Home</h1>
-		<form method="post" action="pic.php" enctype="multipart/form-data">
-			<input type="file" name="image"/>
-			<input type="submit" name="submit"/>
-		</form>
-	</body>
+	?><div class='body'>
+		<h1>Home</h1>
+			<form method="post" action="pic.php" enctype="multipart/form-data">
+				<input type="file" name="image"/>
+				<input type="submit" name="submit"/>
+			</form>
+			</div><?php include 'chatbar.php';
+					include 'chatbar.php';
+				?></body>
 </html>
 

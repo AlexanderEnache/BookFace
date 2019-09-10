@@ -8,6 +8,7 @@
 	</head>
 	
 	<body><?php include 'navbar.php';
+	?><div class='body'><?php
 	
 	$result = mysqli_query($connection, "select * from userlog where id = ".$_GET['id'].";");
 	
@@ -24,7 +25,7 @@
 			}else{
 				echo "<p>You not logged in</p>";
 			}
-	?></body>
+		?></div><?php include 'chatbar.php';?></body>
 
 </html>
 

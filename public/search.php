@@ -18,17 +18,18 @@ session_start();
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body><?php include 'navbar.php';
-	echo '<h1>Search</h1>';
-			$num = 0;
-			while($current = mysqli_fetch_assoc($result)){
-				$num++;
-				(new user($current['username'], $current['name'], $current['id']))->toString();
-			}
-			if(!$num){
-				echo "<h2>No results found</h2>"; 
-			}
-	?></body>
+	<body><?php include 'navbar.php';?><div class='body'><?php
+		echo '<h1>Search</h1>';
+				$num = 0;
+				while($current = mysqli_fetch_assoc($result)){
+					$num++;
+					(new user($current['username'], $current['name'], $current['id']))->toString();
+				}
+				if(!$num){
+					echo "<h2>No results found</h2>"; 
+				}
+		?></div><?php include 'chatbar.php';?>
+	</body>
 
 </html>
 

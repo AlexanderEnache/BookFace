@@ -4,7 +4,8 @@
 			$_SESSION['end'] = true;
 		$href = "login.php";
 		$signup = "";
-		$myface = "<li class='navlink'><a href='myface.php' class='no-decoration'>my face</a></li>";
+		$myface = "<li class='navlink'><a href='index.php' class='no-decoration'>my face</a></li>";
+		$post = "<li class='navlink'><a href='post.php' class='no-decoration'>post</a></li>";
 		$chats = 
 		"<li id='chat-hover' class='navlink'>
 			<a href='#' id='chats' class='no-decoration'>chats</a>
@@ -19,7 +20,8 @@
 		$a = "login";
 		$href  = "login.php";
 		$signup = "<li class='navlink'><a href='signup.php' class='no-decoration'>signup</a></li>";
-		$myface = "";
+		$myface = "<li class='navlink'><a href='myface.php' class='no-decoration'>my face</a></li>";
+		$post  = "";	
 		$chats = "";
 	}
 
@@ -74,11 +76,10 @@
 					<input class='search-user-bar' type="search" name="find">
 					<button class='search-user-button' type="submit" name="search"><i class="fas fa-search"></i></button>
 				</form>
-			</li>
-			<li class='navlink'><a href="index.php" class='no-decoration'>home</a></li>
-			<li class='navlink'><a href="post.php" class='no-decoration'>post</a></li><?php
-			echo $signup;
+			</li><?php
 			echo $myface;
+			echo $post;
+			echo $signup;
 			echo $chats;
 			?><li class='navlink'><a href="login.php" class='no-decoration'><?php echo $a;?></a></li>
 		</ul>
