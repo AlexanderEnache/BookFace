@@ -42,14 +42,14 @@ include 'lib.php';
 		public function showPost(){
 			
 			if($this->imgid){
-				echo "<div class='post'>
+				echo "<div>
 					<h1>".$this->title."</h1>
 					<p class='listItem-text'>".$this->text."</p>
 					<img class='showPost-image' src='images/".$this->imgid.".jpg'>
 					<p>".$this->date."</p>
 				</div>";
 			}else{
-				echo "<div class='post'>
+				echo "<div>
 					<h3>".$this->title."</h3>
 					<p class='listItem-text'><a href='showpost.php?id=".$this->id."'>".$this->text."</a></p>
 					<p>".$this->date."</p>
