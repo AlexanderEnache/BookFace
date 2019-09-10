@@ -28,8 +28,7 @@ session_start();
 				if(!$num){
 					echo "<h2>No results found</h2>"; 
 				}
-		?></div><?php include 'chatbar.php';?>
-	</body>
+		?></div><?php include 'chatbar.php';?></body>
 
 </html>
 

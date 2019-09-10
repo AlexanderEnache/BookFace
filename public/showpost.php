@@ -11,12 +11,11 @@
 				$result = mysqli_query($connection, "select * from postlog where id = ".$_GET['id'].";");
 				$post = firstRow($result);
 				if($post){
-					(new post($post['text'], $post['crt_at'], $post['id'], $post['imgid']))->showPost();
+					(new post($post['title'], $post['text'], $post['crt_at'], $post['id'], $post['imgid']))->showPost();
 				}else{
 					//header("Location: index.php");
 				}
-		include 'chatbar.php';?></div>
-	</body>
+		?></div><?php include 'chatbar.php';?></body>
 
 </html>
 

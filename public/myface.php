@@ -14,8 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body>
-	<?php include 'navbar.php';
+	<body><?php include 'navbar.php';
 	?><div class='body'>
 	<h1>Home</h1>
 		<?php

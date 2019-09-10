@@ -17,7 +17,7 @@
 					<h3>
 						<a href='page.php?id=".$this->id."'>".$this->name."</a>
 					</h3>
-					<button onclick='startChat(".'"'.$this->username.'"'.")'>Message</button>
+					<button class='start-chat' onclick='startChat(".'"'.$this->username.'"'.")'><i class='far fa-comment'></i></button>
 				</div>";
 		}
 	

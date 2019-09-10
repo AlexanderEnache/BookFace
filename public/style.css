@@ -92,6 +92,23 @@ body{
 	color: white;
 }
 
+.start-chat{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 35px;
+    width: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #3b5998;
+    color: white;
+}
+
+.start-chat:hover{
+	background-color: #E9EBEE;
+	color: black;
+}
+
 @font-face {
 	font-family: 'Klavica-Bold';
 	src: url('KlavikaBold.otf');
@@ -118,20 +135,6 @@ body{
 	border-radius: 15px;
 	padding: 10px 35px 30px 35px;
 
-}
-
-.form{
-	/* position: relative;
-	font-family: 'Klavica-Bold';
-	
-	margin: 0px;
-	width: 250px;
-	
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	
-	text-align: center; */
 }
 
 .form-input{
@@ -192,9 +195,11 @@ body{
 	width: 40%;
 }
 
-/* .post-blue-box{
-	height: 50% auto;
-} */
+.listItem-text{
+	display : block; 
+	overflow-wrap: break-word; 
+	max-width : 100%;
+}
 
 #chat-list{
 	display:none;
@@ -240,6 +245,10 @@ body{
 }
 
 .show-post > img{
+	width:100%;
+}
+
+.showPost-image{
 	width:100%;
 }
 
@@ -348,6 +357,10 @@ body{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	
+	display : block;
+	overflow-wrap: break-word;
+	/* max-width : 100%; */
 }
 
 .bubble-left:after{
@@ -375,6 +388,10 @@ body{
 	border-radius: 10px;
 	color: white;
 	clear: both;
+	
+	display : block;
+	overflow-wrap: break-word;
+	/* max-width : 100%; */
 }
 
 .bubble-right:after{

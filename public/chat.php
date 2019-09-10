@@ -11,12 +11,12 @@
 				});
 				/* if(lock){
 					$('#chat').animate({scrollTop: $('#chat')[0].scrollHeight}, 1500);
-					lock = false;
+					lock = false; $('#chat-text').val()
 				} */
 			}, 1000);
 			
 			$('#btn').click(function(){
-				if($('#chat-text').val()){
+				if( $.trim( $('#chat-text').val() ) != '' ){
 					$('#send').load('postChat.php', {
 						text: $('#chat-text').val(),
 						user: $('#user').text(),
@@ -24,6 +24,8 @@
 					});
 					$('#chat-text').val("");
 					// lock = true;
+				}else{
+					$('#chat-text').val("");
 				}
 			});
 		});

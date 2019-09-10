@@ -46,9 +46,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body  style='background-color:white'><div class='body'><?php 
+	<body  style='background-color:white'><?php 
 	include 'navbar.php';
-	?><div class='blue-box'>
+	?>
+		<div class='blue-box'>
 			<form action="signup.php" method="post">
 				<h1>Sign Up</h1>
 				<input class='form-input' type='text' placeholder='Full Name' name='name'/> <br><br>
@@ -57,7 +58,7 @@
 				<input class='form-input' type='password' placeholder='Retype Password' name='repassword'/> <br><br>
 				<input class='form-button' type="submit" name="submit" value="Send">
 			</form>
-		</div></div><?php include 'chatbar.php';
+		</div><?php include 'chatbar.php';
 	?></body>
 </html>
 

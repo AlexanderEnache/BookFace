@@ -24,14 +24,14 @@ include 'lib.php';
 			if($this->imgid){
 				echo "<div class='post'>
 					<h3>".$this->title."</h3>
-					<p><a href='showpost.php?id=".$this->id."'>".$this->text."</a></p>
+					<p class='listItem-text'><a href='showpost.php?id=".$this->id."'>".$this->text."</a></p>
 					<img height='40px' src='images/".$this->imgid.".jpg'>
 					<p>".$this->date."</p>
 				</div>";
 			}else{
 				echo "<div class='post'>
 					<h3>".$this->title."</h3>
-					<p><a href='showpost.php?id=".$this->id."'>".$this->text."</a></p>
+					<p class='listItem-text'><a href='showpost.php?id=".$this->id."'>".$this->text."</a></p>
 					<p>".$this->date."</p>
 				</div>";
 			}
@@ -42,6 +42,21 @@ include 'lib.php';
 		public function showPost(){
 			
 			if($this->imgid){
+				echo "<div class='post'>
+					<h1>".$this->title."</h1>
+					<p class='listItem-text'>".$this->text."</p>
+					<img class='showPost-image' src='images/".$this->imgid.".jpg'>
+					<p>".$this->date."</p>
+				</div>";
+			}else{
+				echo "<div class='post'>
+					<h3>".$this->title."</h3>
+					<p class='listItem-text'><a href='showpost.php?id=".$this->id."'>".$this->text."</a></p>
+					<p>".$this->date."</p>
+				</div>";
+			}
+			
+			/* if($this->imgid){
 				echo "<div class='show-post'>
 					<h2>".$this->title."</h2>
 					<p>".$this->text."</p>
@@ -54,24 +69,9 @@ include 'lib.php';
 					<p>".$this->text."</p>
 					<p>".$this->date."</p>
 				</div>";
-			}
+			} */
 			
 		}
-		
-		/* public function showPost(){
-			if($this->imgid){
-				echo "<div>
-					<img class='postimg' src='"."images/".(firstRow($result))['image']."'>
-					<h1>".(firstRow($result))['image']."AAA</h1>
-					<p>".$this->date."</p>
-				</div>";
-			}else{
-				echo "<div>
-					
-					<p>".$this->date."</p>
-				</div>";
-			}
-		} */
 		
 		public function DateDiff($epoch){
 			$time = (int)time();
@@ -87,30 +87,6 @@ include 'lib.php';
 				}
 			}
 		}
-		
-		/*static function Post(){
-			
-			if(!empty($_FILES['image']['name'])){
-				
-				$target = "images/".basename($_FILES['image']['name']);
-				
-				$image = $_FILES['image']['name'];
-				
-				$result = mysqli_query($connection, "insert into image(image) values('$image');");
-				
-				$id = mysqli_insert_id($connection);
-				$imgid = firstRow(mysqli_query($connection, "select * from image where id = '".$id."';"));
-				//echo $imgid['image'];
-				
-				if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-					//echo '<h1>Wirked</h1>';
-				}else{
-					//echo '<h1>Didnt wirk</h1>';
-				}
-
-			}
-		
-		}*/
 		
 	}
 

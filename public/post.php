@@ -43,7 +43,7 @@
 		<style><?php include 'style-mobile.css'?></style>
 	</head>
 	
-	<body style='background-color:white'><div class='body'><?php include 'navbar.php';
+	<body style='background-color:white'><?php include 'navbar.php';
 	?><div class='blue-box'>
 				<form class='post-form' action="post.php" method="POST" enctype="multipart/form-data">
 					<h1>Post</h1>
@@ -52,7 +52,7 @@
 					<input class='form-input' type="file" name="image"/><br><br>
 					<input class='form-button post-form-button' type="submit" name="submit"/>
 				</form>
-			</div></div><?php include 'chatbar.php';
+			</div><?php include 'chatbar.php';
 		?></body>
 </html>
 
