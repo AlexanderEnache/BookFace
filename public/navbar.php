@@ -70,7 +70,7 @@
 <body>
 	<div class = 'navbar'>
 		<ul class="navlinks">
-			<li class='logo'><h1>AssFace</h1></li>
+			<li class='logo'><h1>PageFace</h1></li>
 			<li class='navlink search-user-li'>
 				<form class='search-user-form' action="navbar.php" method="get" class="findFriend">
 					<input class='search-user-bar' type="search" name="find">
